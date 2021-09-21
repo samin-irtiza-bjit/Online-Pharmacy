@@ -18,5 +18,11 @@ class UserTest extends TestCase{
         $client=$this->user->get_client(1028);
         $this->assertEquals("1028",$client);
     }
+
+    public function testGetOrderHistory(){
+        $history=$this->user->get_order_history(1028);
+        $this->assertEquals("1028",$history[0]['client_id']);
+        $this->assertEquals(398.00,$history[0]['total_amount']);
+    }
 }
 ?>
