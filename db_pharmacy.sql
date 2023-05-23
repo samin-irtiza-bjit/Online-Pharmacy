@@ -7,6 +7,10 @@
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
+GRANT ALL PRIVILEGES ON *.* TO 'pharma'@'192.168.56.110' IDENTIFIED BY
+'tetrispass' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
